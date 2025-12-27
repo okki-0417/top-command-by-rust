@@ -3,6 +3,10 @@ name = "top-command-by-rust"
 version = "0.1.0"
 edition = "2021"
 
+[[bin]]
+name = "rtop"
+path = "src/main.rs"
+
 [dependencies]
-sysinfo = "0.32"
-crossterm = "0.28"
+sysinfo = "0.37.2"
+crossterm = "0.29.0"

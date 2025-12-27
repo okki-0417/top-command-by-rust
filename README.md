@@ -5,7 +5,7 @@ Rust で実装した `top` コマンド風 TUI アプリケーション
 ## スクリーンショット
 
 ```
-top-command-by-rust | Sort: CPU | q:終了 c:CPU順 m:MEM順
+rtop | Sort: CPU | q:終了 c:CPU順 m:MEM順
 
     PID NAME                           CPU                    MEM
 --------------------------------------------------------------------------------
@@ -36,12 +36,17 @@ top-command-by-rust | Sort: CPU | q:終了 c:CPU順 m:MEM順
 git clone https://github.com/mumumu/top-command-by-rust.git
 cd top-command-by-rust
 
-# 実行
-cargo run
+# インストール（どこからでも rtop で実行可能に）
+cargo install --path .
 
-# リリースビルド
-cargo build --release
-./target/release/top-command-by-rust
+# 実行
+rtop
+```
+
+または開発時：
+
+```bash
+cargo run
 ```
 
 ## 使用クレート

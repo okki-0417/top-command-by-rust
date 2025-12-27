@@ -37,7 +37,7 @@ pub fn display_header(sort_key: SortKey) {
         SortKey::Memory => "MEM",
     };
     print!(
-        "top-command-by-rust | Sort: {}{}{} | q:終了 c:CPU順 m:MEM順\r\n\r\n",
+        "rtop | Sort: {}{}{} | q:終了 c:CPU順 m:MEM順\r\n\r\n",
         BOLD, sort_label, RESET
     );
     print!(
